@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>My Jungle Explorer</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+
+    <style>
+        body {
+            position: relative;
+            background-color: lavenderblush;
+        }
+
+        .jungle-slide {
+            height: 200px;
+            text-align: center;
+            padding-top: 75px;
+            font-size: 1.8rem;
+            color: rgb(255, 255, 255);
+        }
+
+        .slide-rainforest {
+            background-image: url("trees.jpeg");
+        }
+
+        .slide-river {
+            background-image: url("river.jpeg");
+        }
+
+        .slide-night {
+            background-image: url("moon.jpeg");
+        }
+
+
+        .section {
+            padding: 70px 20px;
+            min-height: 300px;
+        }
+
+
+        #rainforest {
+            background: rgb(176, 255, 176);
+        }
+
+        #river {
+            background: rgb(192, 227, 255);
+        }
+
+        #night {
+            background: rgb(255, 166, 196);
+        }
+        #jungleNav {
+            background-image: url("the-falls.jpeg") ;
+            color: black;
+            background-color: transparent;
+        }
+    </style>
+</head>
+
+
+<body data-spy="scroll" data-target="#jungleNav" data-offset="60">
+
+    <div id="jungleCarousel" class="carousel slide" data-ride="carousel">
+
+
+        <ol class="carousel-indicators">
+            <li data-target="#jungleCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#jungleCarousel" data-slide-to="1"></li>
+            <li data-target="#jungleCarousel" data-slide-to="2"></li>
+        </ol>
+
+
+        <div class="carousel-inner">
+            <div class="carousel-item active jungle-slide slide-rainforest">
+                 Forest Adventure
+            </div>
+
+
+            <div class="carousel-item jungle-slide slide-river">
+                 Wild River Journey
+            </div>
+
+
+            <div class="carousel-item jungle-slide slide-night">
+                 Night Journey Safari
+            </div>
+        </div>
+
+
+        <a class="carousel-control-prev" href="#jungleCarousel" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+
+
+        <a class="carousel-control-next" href="#jungleCarousel" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+
+
+    </div>
+
+    <nav id="jungleNav" class="navbar sticky-top">
+        <span class="navbar-brand"> Jungle Explorer</span>
+
+
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#rainforest">Forest</a>
+            </li>
+
+
+            <li class="nav-item">
+                <a class="nav-link" href="#river"> Wild River</a>
+            </li>
+
+
+            <li class="nav-item">
+                <a class="nav-link" href="#night">Night Safari</a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <div class="container">
+
+
+        <div id="rainforest" class="section">
+            <h2> Rainforest Adventure</h2>
+            <p>Walk through tall trees and spot monkeys, parrots, snakes, and colourful butterflies.The gentle rustling of leaves in the wind creates a relaxing soundtrack for hikers.Gathering dry twigs and branches
+            helps prepare for a cozy evening campsite.Setting up a canvas tent under towering trees builds classic outdoor survival
+            skills.Sitting around a crackling campfire helps adventurers share thrilling stories and warm meals.</p>
+        </div>
+
+
+        <div id="river" class="section">
+            <h2>  Jungle River Journey</h2>
+            <p>Follow the jungle river and discover crocodiles, frogs, fish, and water birds. Hidden waterfalls cascade beautifully into deep, crystal-clear pools.Freshwater pink dolphins occasionally surface near
+            the river curves.Thick moss hangs heavily from ancient, twisting tree branches.Local indigenous guides navigate the
+            winding waterways safely.Warm humid air carries the rich, earthy scent of rain.Wild river banks reveal tracks of jaguars
+            and deer.</p>
+        </div>
+
+
+        <div id="night" class="section">
+            <h2>  Night Jungle Safari</h2>
+            <p>Explore the jungle after sunset and look for owls, fireflies, bats, and leopards. Fireflies blink like tiny, magical stars trapped in the undergrowth.Every shadow holds the thrill of the unknown and
+            unexpected.The faint sound of a rushing stream guides the midnight trail.Wild mushrooms glow faintly with a soft, eerie
+            bioluminescent light.Dewdrops on spiderwebs glitter like diamonds under flashlight beams.Senses heighten as the darkness
+            sharpens hearing and touch.The sudden flutter of bat wings creates a momentary rush of adrenaline.Ancient paths feel
+            completely different without the warmth of the sun.Navigating by the stars brings a sense of primal discovery.Returning
+            to camp brings a warm feeling of triumph and wonder.</p>
+        </div>
+
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>
